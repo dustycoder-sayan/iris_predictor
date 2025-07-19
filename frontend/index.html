@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Identification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1>Iris Identification</h1>
+            <p>Identify the type of Iris</p>
+        </div>
+    </header>
+
+    <section class="main-content">
+        <div>
+            <form id="form__predict" action="" method="POST" class="iris-form " pattern="[0-9]+(\.[0-9]{1,2})?">
+                <input type="text" name="sepal_length" placeholder="Sepal Length" pattern="[0-9]+(\.[0-9]{1,2})?">
+                <input type="text" name="sepal_width" placeholder="Sepal Width" pattern="[0-9]+(\.[0-9]{1,2})?">
+                <input type="text" name="petal_length" placeholder="Petal Length" pattern="[0-9]+(\.[0-9]{1,2})?">
+                <input type="text" name="petal_width" placeholder="Petal Width" pattern="[0-9]+(\.[0-9]{1,2})?">
+                <input type="submit" value="Predict">
+            </form>
+        </div>
+    </section>
+
+    <section class="results">
+        <div>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div>
+            <span>Copyright &copy; 2025</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
